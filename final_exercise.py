@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set(style='white', font_scale=5)
 
-@st.cache
+@st.cache_data
 def load_data():
     return pd.read_csv('diamonds_regression.csv')
 
